@@ -1,6 +1,6 @@
 # Créditos
 
-Este documento reconhece e dá crédito aos autores dos designs utilizados em nosso projeto. Este projeto é destinado exclusivamente para fins acadêmicos e não será utilizado para fins comerciais.
+Este documento reconhece e dá crédito aos autores dos designs utilizados nesse projeto. Este projeto é destinado exclusivamente para fins acadêmicos e não será utilizado para fins comerciais.
 
 ## Autores
 
