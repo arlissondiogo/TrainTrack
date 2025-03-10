@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>TrainTrack</title>
+    <link
+      rel="icon"
+      href="https://img.freepik.com/vetores-gratis/ilustracao-do-conceito-de-casal-de-aptidao_114360-24280.jpg?t=st=1741560506~exp=1741564106~hmac=c478a932fc9d3182c1873e666e8a324f02f6af6f3d39b69674b460d0979e2aa6&w=740"
+      type="image/x-icon"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 flex flex-col items-center min-h-screen">
+    <header class="bg-white w-full shadow-md py-4">
+      <div class="container mx-auto flex justify-between items-center px-6">
+        <div class="flex items-center">
+          <div
+            class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center"
+          >
+            <i class="fas fa-dumbbell text-white"> </i>
+          </div>
+          <h1 class="ml-2 text-2xl font-semibold">Diário de Treinos</h1>
+        </div>
+        <nav>
+          <a class="text-gray-700 hover:text-green-500 mx-4" href="perfil.html">
+            Perfil
+          </a>
+          <a class="text-gray-700 hover:text-green-500 mx-4" href="index.html">
+            Sair
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main class="container mx-auto flex-grow px-6 py-8">
+      <div class="bg-white rounded-lg shadow-lg p-6">
+        <h2 class="text-2xl font-semibold mb-4">Adicionar Novo Treino</h2>
+        <form>
+          <div class="mb-4">
+            <label class="block text-gray-700"> Exercício </label>
+            <input
+              class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+              placeholder="Nome do exercício"
+              type="text"
+            />
+          </div>
+          <div class="mb-4">
+            <label class="block text-gray-700"> Repetições </label>
+            <input
+              class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+              placeholder="Número de repetições"
+              type="number"
+            />
+          </div>
+          <div class="mb-4">
+            <label class="block text-gray-700"> Carga (kg) </label>
+            <input
+              class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+              placeholder="Peso em kg"
+              type="number"
+            />
+          </div>
+          <button
+            class="w-full bg-green-500 text-white py-2 rounded-lg font-semibold hover:bg-green-600 transition duration-300"
+          >
+            Adicionar Treino
+          </button>
+        </form>
+      </div>
+      <div class="mt-8 flex flex-col lg:flex-row">
+        <div class="bg-white rounded-lg shadow-lg p-6 lg:w-1/2 lg:mr-4">
+          <h2 class="text-2xl font-semibold mb-4">Histórico de Treinos</h2>
+          <div class="overflow-y-auto max-h-96">
+            <div class="mb-4">
+              <h3 class="text-xl font-semibold">Supino</h3>
+              <p class="text-gray-700">Repetições: 10</p>
+              <p class="text-gray-700">Carga: 50 kg</p>
+            </div>
+            <div class="mb-4">
+              <h3 class="text-xl font-semibold">Agachamento</h3>
+              <p class="text-gray-700">Repetições: 12</p>
+              <p class="text-gray-700">Carga: 70 kg</p>
+            </div>
+            <div class="mb-4">
+              <h3 class="text-xl font-semibold">Rosca Direta</h3>
+              <p class="text-gray-700">Repetições: 15</p>
+              <p class="text-gray-700">Carga: 20 kg</p>
+            </div>
+            <div class="mb-4">
+              <h3 class="text-xl font-semibold">Agachamento</h3>
+              <p class="text-gray-700">Repetições: 12</p>
+              <p class="text-gray-700">Carga: 70 kg</p>
+            </div>
+            <div class="mb-4">
+              <h3 class="text-xl font-semibold">Rosca Direta</h3>
+              <p class="text-gray-700">Repetições: 15</p>
+              <p class="text-gray-700">Carga: 20 kg</p>
+            </div>
+            <div class="mb-4">
+              <h3 class="text-xl font-semibold">Agachamento</h3>
+              <p class="text-gray-700">Repetições: 12</p>
+              <p class="text-gray-700">Carga: 70 kg</p>
+            </div>
+            <div class="mb-4">
+              <h3 class="text-xl font-semibold">Rosca Direta</h3>
+              <p class="text-gray-700">Repetições: 15</p>
+              <p class="text-gray-700">Carga: 20 kg</p>
+            </div>
+            <!-- Adicione mais itens de histórico conforme necessário -->
+          </div>
+        </div>
+        <div
+          class="bg-white rounded-lg shadow-lg p-6 lg:w-1/2 lg:ml-4 mt-8 lg:mt-0"
+        >
+          <h2 class="text-2xl font-semibold mb-4">Progresso</h2>
+          <div class="flex justify-center items-center h-96">
+            <img
+              alt="Gráfico de progresso mostrando a evolução dos treinos"
+              class="w-full h-full object-contain"
+              height="400"
+              src="https://storage.googleapis.com/a1aa/image/xWIVhLxywVqMtpNA9ui1nOOnQ8M4ZI2v456HYmOaD-w.jpg"
+              width="400"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

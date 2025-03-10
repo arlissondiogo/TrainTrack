@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>TrainTrack</title>
+    <link
+      rel="icon"
+      href="https://img.freepik.com/vetores-gratis/ilustracao-do-conceito-de-casal-de-aptidao_114360-24280.jpg?t=st=1741560506~exp=1741564106~hmac=c478a932fc9d3182c1873e666e8a324f02f6af6f3d39b69674b460d0979e2aa6&w=740"
+      type="image/x-icon"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 flex flex-col items-center min-h-screen">
+    <header class="bg-white w-full shadow-md py-4">
+      <div class="container mx-auto flex justify-between items-center px-6">
+        <div class="flex items-center">
+          <div
+            class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center"
+          >
+            <i class="fas fa-dumbbell text-white"></i>
+          </div>
+          <h1 class="ml-2 text-2xl font-semibold">Diário de Treinos</h1>
+        </div>
+        <nav>
+          <a href="home.html" class="text-gray-700 hover:text-green-500 mx-4"
+            >Home</a
+          >
+          <a href="index.html" class="text-gray-700 hover:text-green-500 mx-4"
+            >Sair</a
+          >
+        </nav>
+      </div>
+    </header>
+    <main class="container mx-auto flex-grow px-6 py-8">
+      <div class="bg-white rounded-lg shadow-lg p-6">
+        <h2 class="text-2xl font-semibold mb-4">Perfil</h2>
+        <div class="flex items-center mb-4">
+          <img
+            alt="Foto de perfil do usuário"
+            class="w-24 h-24 rounded-full object-cover mr-4"
+            height="100"
+            src="https://storage.googleapis.com/a1aa/image/YIHwIgjbccF0hel0jc4l9GUHLNZ41w5TOLU3zYQ1m5U.jpg"
+            width="100"
+          />
+          <div>
+            <h3 class="text-xl font-semibold">Nome do Usuário</h3>
+            <p class="text-gray-700">email@exemplo.com</p>
+            <p class="text-gray-700">Idade: 30</p>
+          </div>
+        </div>
+        <div class="mb-4">
+          <h3 class="text-xl font-semibold mb-2">Informações Adicionais</h3>
+          <p class="text-gray-700">Altura: 1.75m</p>
+          <p class="text-gray-700">Peso: 70kg</p>
+          <p class="text-gray-700">Objetivo: Ganho de Massa</p>
+        </div>
+        <button
+          class="w-full bg-green-500 text-white py-2 rounded-lg font-semibold hover:bg-green-600 transition duration-300 mb-4"
+        >
+          Editar Perfil
+        </button>
+        <button
+          class="w-full bg-red-500 text-white py-2 rounded-lg font-semibold hover:bg-red-600 transition duration-300"
+        >
+          Logout
+        </button>
+      </div>
+      <div class="mt-8">
+        <h2 class="text-2xl font-semibold mb-4">Histórico de Treinos</h2>
+        <div class="bg-white rounded-lg shadow-lg p-6">
+          <div class="mb-4">
+            <h3 class="text-xl font-semibold">Supino</h3>
+            <p class="text-gray-700">Repetições: 10</p>
+            <p class="text-gray-700">Carga: 50 kg</p>
+          </div>
+          <div class="mb-4">
+            <h3 class="text-xl font-semibold">Agachamento</h3>
+            <p class="text-gray-700">Repetições: 12</p>
+            <p class="text-gray-700">Carga: 70 kg</p>
+          </div>
+          <div class="mb-4">
+            <h3 class="text-xl font-semibold">Rosca Direta</h3>
+            <p class="text-gray-700">Repetições: 15</p>
+            <p class="text-gray-700">Carga: 20 kg</p>
+          </div>
+          <!-- Adicione mais itens de histórico conforme necessário -->
+        </div>
+      </div>
+    </main>
+    <footer class="bg-white w-full py-4 shadow-md">
+      <div class="container mx-auto text-center text-gray-500">
+        <p>&copy; 2023 Diário de Treinos. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+  </body>
+</html>
